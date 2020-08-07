@@ -1,7 +1,8 @@
 # FixMyRiftS
-Quickly toggles the Rift S hardware for a faster resolution to "No DisplayPort Connection" issues | [Download Under Releases](https://github.com/rcmaehl/FixMyRiftS/releases)
+Toggles the Rift S hardware for a fast fix to "No DisplayPort Connection" | [Download Under Releases](https://github.com/rcmaehl/FixMyRiftS/releases)
 
 ![Version 0.1](https://i.imgur.com/csoMsg0.gif)
+(Click to Zoom)
 
 ## What is FixMyRiftS?
 
