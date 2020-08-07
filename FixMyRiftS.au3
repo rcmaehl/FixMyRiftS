@@ -15,6 +15,15 @@ Main()
 
 Func Main()
 
-	RunWait("powershell -Command Get-PnpDevice -FriendlyName 'Rift S USB Hub' | Disable-PnpDevice -confirm:$false; Get-PnpDevice -FriendlyName 'Rift S USB Hub' | Enable-PnpDevice -confirm:$false")
+	$sVer = "0.1"
+
+	ProgressOn("Fix My Rift S " & $sVer, "Fixing Rift S")
+	ProgressSet(33, "Disabling USB Hub", "Fixing Rift S")
+	RunWait("powershell -Command Get-PnpDevice -FriendlyName 'Rift S USB Hub' | Disable-PnpDevice -confirm:$false", "", @SW_HIDE)
+	ProgressSet(67, "Enabling USB Hub", "Fixing Rift S")
+	RunWait("powershell -Command Get-PnpDevice -FriendlyName 'Rift S USB Hub' | Enable-PnpDevice -confirm:$false", "", @SW_HIDE)
+	ProgressSet(100, "Done", "Fixing Rift S")
+	Sleep(1000)
+	ProgressOff()
 
 EndFunc
