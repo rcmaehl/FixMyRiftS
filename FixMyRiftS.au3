@@ -11,6 +11,8 @@
 
 #RequireAdmin
 
+FileChangeDir(@SystemDir)
+
 Main()
 
 Func Main()
